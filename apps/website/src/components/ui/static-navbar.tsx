@@ -37,10 +37,10 @@ const navItems: NavItem[] = [
     link: "/more",
     children: [
       { name: "For Community Members", link: "/more/community-members" },
-      { name: "Partner With Us", link: "/more/partner-with-us" },
       { name: "For Volunteers", link: "/more/for-volunteers" },
     ],
   },
+  { name: "Partner With Us", link: "/more/partner-with-us" },
   { name: "FAQs", link: "/faqs" },
   { name: "Contact", link: "/contact" },
 ];
@@ -227,7 +227,7 @@ export default function StaticNavbar() {
             <Link
               href="/apply"
               onClick={() => setMobileMenuOpen(false)}
-              className="mt-6 flex items-center justify-center px-6 py-3 rounded-full bg-[#1B2A53] text-white font-heading font-bold uppercase tracking-wider text-base text-center w-full shadow-md"
+              className="mt-6 flex items-center justify-center px-6 py-3 rounded-full bg-[#1B2A53] text-white font-heading font-bold uppercase tracking-wider text-base text-center w-full shadow-md hover:bg-[#E2231A] transition-colors"
             >
               Apply Now
             </Link>
