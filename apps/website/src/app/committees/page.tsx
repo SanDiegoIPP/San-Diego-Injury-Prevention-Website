@@ -76,6 +76,7 @@ const committees: Committee[] = [
     name: "Legal Committee",
     members: "6 committee members",
     icon: Scale,
+    leadPhoto: "/images/committees/TEMP-legal-committee.png",
     description: [
       "Research, develop plans, and execute projects related to improving San Diego county (and other places) through policy and education.",
     ],
