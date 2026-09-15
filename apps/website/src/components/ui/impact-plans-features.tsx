@@ -8,6 +8,8 @@ export interface ImpactPlanItem {
   title: string;
   description: string;
   icon: LucideIcon;
+  // optional link for the whole card; internal ("/path") opens same tab, external opens new tab
+  href?: string;
 }
 
 interface ImpactPlansFeaturesProps {
@@ -48,6 +50,9 @@ export function ImpactPlansFeatures({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {items.map((item, index) => {
             const Icon = item.icon;
+            const isClickable = Boolean(item.href && item.href.length);
+            const isExternal = isClickable && /^(https?:)?\/\//i.test(item.href as string);
+
             return (
               <motion.div
                 key={item.title}
@@ -62,19 +67,41 @@ export function ImpactPlansFeatures({
                   bounce: 0.3,
                 }}
               >
-                <Card className="relative flex flex-col h-full w-full bg-white border-2 border-gray-100 rounded-none shadow-none hover:border-[#1B2A53] transition-colors group">
-                  <CardContent className="pt-8 px-6 pb-8 flex flex-col h-full items-start">
-                    <div className="mb-6 flex aspect-square size-14 items-center justify-center bg-[#E2231A] text-white rounded-full group-hover:bg-[#1B2A53] transition-colors">
-                      <Icon className="size-7" strokeWidth={2} />
-                    </div>
-                    <h3 className="text-2xl font-heading font-bold uppercase tracking-wide text-[#1B2A53] mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="text-base text-[#1B2A53]/80 leading-relaxed font-medium">
-                      {item.description}
-                    </p>
-                  </CardContent>
-                </Card>
+                {isClickable ? (
+                  <a
+                    href={item.href}
+                    className="w-full block"
+                    {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  >
+                    <Card className="relative flex flex-col h-full w-full bg-white border-2 border-gray-100 rounded-none shadow-none hover:border-[#1B2A53] transition-colors group">
+                      <CardContent className="pt-8 px-6 pb-8 flex flex-col h-full items-start">
+                        <div className="mb-6 flex aspect-square size-14 items-center justify-center bg-[#E2231A] text-white rounded-full group-hover:bg-[#1B2A53] transition-colors">
+                          <Icon className="size-7" strokeWidth={2} />
+                        </div>
+                        <h3 className="text-2xl font-heading font-bold uppercase tracking-wide text-[#1B2A53] mb-3">
+                          {item.title}
+                        </h3>
+                        <p className="text-base text-[#1B2A53]/80 leading-relaxed font-medium">
+                          {item.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </a>
+                ) : (
+                  <Card className="relative flex flex-col h-full w-full bg-white border-2 border-gray-100 rounded-none shadow-none hover:border-[#1B2A53] transition-colors group">
+                    <CardContent className="pt-8 px-6 pb-8 flex flex-col h-full items-start">
+                      <div className="mb-6 flex aspect-square size-14 items-center justify-center bg-[#E2231A] text-white rounded-full group-hover:bg-[#1B2A53] transition-colors">
+                        <Icon className="size-7" strokeWidth={2} />
+                      </div>
+                      <h3 className="text-2xl font-heading font-bold uppercase tracking-wide text-[#1B2A53] mb-3">
+                        {item.title}
+                      </h3>
+                      <p className="text-base text-[#1B2A53]/80 leading-relaxed font-medium">
+                        {item.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                )}
               </motion.div>
             );
           })}
