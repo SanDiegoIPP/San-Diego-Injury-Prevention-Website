@@ -8,6 +8,7 @@ const CurveOverlay = dynamic(() => import("@/components/ui/curve-overlay"));
 import AeroHero2 from "@/components/ui/aero-hero-2";
 const HomeImpactSection = dynamic(() => import("@/components/ui/home-impact-section"));
 const HomePresidentsTeaser = dynamic(() => import("@/components/ui/home-presidents-teaser"));
+const TestimonialsSection = dynamic(() => import("@/components/ui/testimonials-section"));
 
 export default function Home() {
   return (
@@ -31,13 +32,13 @@ export default function Home() {
             </FadeUp>
             <FadeUp delay={0.2}>
               <p className="text-white text-lg leading-relaxed mb-8 font-medium">
-                We are a student-run 501(c)3 nonprofit organization centered at UC San Diego, dedicated to empowering our community through injury education, community outreach, and evidence-based programs.
+                We are a student-run 501(c)3 nonprofit organization centered at UC San Diego, dedicated to empowering our community through injury education, community outreach, and evidence-based[...]
               </p>
             </FadeUp>
             <FadeUp delay={0.3}>
               <Link
                 href="/apply"
-                className="inline-flex items-center justify-center px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-heading font-bold uppercase tracking-wider hover:bg-white hover:text-[#E2231A] transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 bg-transparent border-2 border-white text-white rounded-full font-heading font-bold uppercase tracking-wider hover:bg-w[...]"
               >
                 apply now
               </Link>
@@ -81,7 +82,7 @@ export default function Home() {
             </FadeUp>
             <FadeUp delay={0.3}>
               <p className="text-white text-lg leading-relaxed font-medium">
-                SDIPP is committed to reducing preventable injuries and promoting safer environments for individuals and families across the San Diego area. Through our various programs and initiatives, we aim to increase the use of evidence-based strategies for injury prevention in all areas, from adolescent sports to fall prevention classes at senior residential homes.
+                SDIPP is committed to reducing preventable injuries and promoting safer environments for individuals and families across the San Diego area. Through our various programs and initia[...]
               </p>
             </FadeUp>
           </div>
@@ -126,7 +127,7 @@ export default function Home() {
             <FadeUp delay={0.3}>
               <Link
                 href="/apply"
-                className="inline-flex items-center justify-center px-8 py-3 bg-[#E2231A] border-2 border-[#E2231A] text-white rounded-full font-heading font-bold uppercase tracking-wider hover:bg-transparent hover:text-[#E2231A] transition-colors"
+                className="inline-flex items-center justify-center px-8 py-3 bg-[#E2231A] border-2 border-[#E2231A] text-white rounded-full font-heading font-bold uppercase tracking-wider hover:b[...]"
               >
                 apply today
               </Link>
@@ -144,6 +145,9 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* ─── TESTIMONIALS ──────────────────────────── */}
+      <TestimonialsSection />
     </div>
   );
 }
