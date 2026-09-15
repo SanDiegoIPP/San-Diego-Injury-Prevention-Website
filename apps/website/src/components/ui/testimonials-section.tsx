@@ -1,7 +1,6 @@
 "use client";
 
 import { FadeUp } from "@/components/ui/fade-up";
-import GrainientBlueSection from "@/components/ui/GrainientBlueSection";
 import { Card, CardContent } from "@/components/ui/card";
 
 interface Testimonial {
@@ -28,10 +27,7 @@ const testimonials: Testimonial[] = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative py-20 overflow-hidden">
-      {/* Gradient Background */}
-      <GrainientBlueSection className="z-0" />
-
+    <section className="relative py-20 overflow-hidden bg-[#729ab8]">
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp delay={0.1}>
