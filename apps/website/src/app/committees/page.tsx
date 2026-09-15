@@ -79,7 +79,7 @@ const committees: Committee[] = [
     description: [
       "Research, develop plans, and execute projects related to improving San Diego county (and other places) through policy and education.",
     ],
-    focus: null,
+    focus: "Research, develop plans, and execute projects related to improving San Diego county through policy and education. Manage legal documentation and insurance for the organization.",
     tasks: null,
   },
 ];
