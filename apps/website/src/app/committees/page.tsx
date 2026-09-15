@@ -89,55 +89,24 @@ const timelineData = committees.map((committee) => ({
   title: committee.name,
   content: (
     <div className="space-y-8">
-      {/* Member count badge, lead photo, focus and tasks in flex layout */}
-      <div className="flex flex-col md:flex-row gap-8">
-        {/* Left column: member badge and photo */}
-        <div className="flex-1 flex flex-col gap-4">
-          {/* Member count badge */}
-          <div className="flex items-center gap-4">
-            <committee.icon className="w-8 h-8 text-accent-blue" />
-            <span className="text-[#1B2A53] font-sans text-xl bg-accent-blue/10 px-5 py-2 rounded-full">
-              {committee.members}
-            </span>
-          </div>
-
-          {committee.leadPhoto ? (
-            <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-accent-blue/20 shadow-md bg-[#f8fafc]">
-              <Image
-                src={committee.leadPhoto}
-                alt={`${committee.name} leads`}
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 768px) 100vw, 768px"
-              />
-            </div>
-          ) : null}
+      {committee.leadPhoto ? (
+        <div className="relative w-full max-w-3xl aspect-[16/10] rounded-2xl overflow-hidden border border-accent-blue/20 shadow-md bg-[#f8fafc]">
+          <Image
+            src={committee.leadPhoto}
+            alt={`${committee.name} leads`}
+            fill
+            className="object-cover object-center"
+            sizes="(max-width: 768px) 100vw, 768px"
+          />
         </div>
+      ) : null}
 
-        {/* Right column: focus and tasks */}
-        {(committee.focus || committee.tasks) && (
-          <div className="flex-1 bg-white/60 rounded-xl p-6 border border-accent-blue/20 flex flex-col gap-6">
-            {committee.focus && (
-              <div>
-                <h4 className="text-xl font-sans text-accent-blue mb-4">Focus</h4>
-                <p className="text-[#0f172a] text-base md:text-lg leading-relaxed">{committee.focus}</p>
-              </div>
-            )}
-            {committee.tasks && (
-              <div>
-                <h4 className="text-xl font-sans text-[#E2231A] mb-4">Member Tasks</h4>
-                <ul className="space-y-3">
-                  {committee.tasks.map((task, i) => (
-                    <li key={i} className="text-[#0f172a] text-base md:text-lg flex items-start gap-3">
-                      <span className="text-[#E2231A]">✓</span>
-                      <span>{task}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        )}
+      {/* Member count badge */}
+      <div className="flex items-center gap-4">
+        <committee.icon className="w-8 h-8 text-accent-blue" />
+        <span className="text-[#1B2A53] font-sans text-xl bg-accent-blue/10 px-5 py-2 rounded-full">
+          {committee.members}
+        </span>
       </div>
 
       {/* Description */}
@@ -149,6 +118,31 @@ const timelineData = committees.map((committee) => ({
           </p>
         ))}
       </div>
+
+      {/* Focus and Tasks Grid */}
+      {(committee.focus || committee.tasks) && (
+        <div className="grid md:grid-cols-2 gap-8 mt-8 bg-white/60 rounded-xl p-8 border border-accent-blue/20">
+          {committee.focus && (
+            <div>
+              <h4 className="text-xl font-sans text-accent-blue mb-4">Focus</h4>
+              <p className="text-[#0f172a] text-base md:text-lg leading-relaxed">{committee.focus}</p>
+            </div>
+          )}
+          {committee.tasks && (
+            <div className={committee.focus ? "md:border-l md:border-accent-blue/30 md:pl-8" : ""}>
+              <h4 className="text-xl font-sans text-[#E2231A] mb-4">Member Tasks</h4>
+              <ul className="space-y-3">
+                {committee.tasks.map((task, i) => (
+                  <li key={i} className="text-[#0f172a] text-base md:text-lg flex items-start gap-3">
+                    <span className="text-[#E2231A]">✓</span>
+                    <span>{task}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   ),
 }));
