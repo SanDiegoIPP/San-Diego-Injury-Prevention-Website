@@ -19,7 +19,7 @@ interface Committee {
 const committees: Committee[] = [
   {
     name: "Outreach Committee",
-    members: "5+ general members",
+    members: "6 committee members",
     icon: Users,
     leadPhoto: "/images/committees/outreach-committee.png",
     description: [
@@ -39,7 +39,7 @@ const committees: Committee[] = [
   },
   {
     name: "Logistics Committee",
-    members: "~6 general members",
+    members: "6 committee members",
     icon: CalendarDays,
     leadPhoto: "/images/committees/logistics-committee.png",
     description: [
@@ -57,7 +57,7 @@ const committees: Committee[] = [
   },
   {
     name: "Research & Impact Committee",
-    members: "~6 general members",
+    members: "15 committee members",
     icon: BarChart3,
     leadPhoto: "/images/committees/research-and-impact-committee.png",
     description: [
@@ -74,7 +74,7 @@ const committees: Committee[] = [
   },
   {
     name: "Legal Committee",
-    members: "~3 general members",
+    members: "6 committee members",
     icon: Scale,
     description: [
       "Research, develop plans, and execute projects related to improving San Diego county (and other places) through policy and education.",
