@@ -2,37 +2,44 @@
 
 import { BookOpen, Heart, Dumbbell, Megaphone, Handshake } from "lucide-react";
 import { ImpactPlansFeatures } from "@/components/ui/impact-plans-features";
+import type { ImpactPlanItem } from "@/components/ui/impact-plans-features";
 
-const impactCards = [
+// Add link URLs to the "href" field for each card. Leave empty string to keep a card non-clickable.
+const impactCards: ImpactPlanItem[] = [
   {
     title: "Health Literacy Presentations",
     description:
       "Educate students in San Diego schools on the importance of injury prevention",
     icon: BookOpen,
+    href: "", // paste link here
   },
   {
     title: "Health Fairs",
     description:
       "Provide helpful resources for local communities, promoting health and wellness",
     icon: Heart,
+    href: "", // paste link here
   },
   {
     title: "Fall Prevention Classes",
     description:
       "Lead fitness, mobility, and tai chi classes for residents of nursing homes.",
     icon: Dumbbell,
+    href: "", // paste link here
   },
   {
     title: "Community Outreach",
     description:
       "Promote health programs by distributing informational materials and engaging with local residents to increase awareness and participation.",
     icon: Megaphone,
+    href: "", // paste link here
   },
   {
     title: "Collaboration",
     description:
       "Work with professionals from various hospitals and health groups to coordinate initiatives, share resources, and support efforts that improve public health outcomes.",
     icon: Handshake,
+    href: "", // paste link here
   },
 ];
 
