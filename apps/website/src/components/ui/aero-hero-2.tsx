@@ -38,10 +38,15 @@ export default function AeroHero2() {
       <div className="relative z-10 w-full max-w-7xl px-4 pb-16 pt-28 text-white sm:px-6 md:px-8 md:pb-20 md:pt-32">
         <div className="flex flex-col gap-12 text-left lg:flex-row lg:items-end lg:justify-between lg:gap-8">
           <div className="max-w-3xl space-y-5 md:space-y-6">
-            <h1 className="font-heading text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-              San Diego Injury Prevention{" "}
-              <span className="text-[#E2231A]">Program</span>
-            </h1>
+            <div>
+              <h1 className="font-heading text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                San Diego Injury Prevention{" "}
+                <span className="text-[#E2231A]">Program</span>
+              </h1>
+              <p className="mt-2 font-sans text-base font-light text-white/90 md:text-lg">
+                A Division of the California Injury Prevention Program
+              </p>
+            </div>
             <p className="max-w-2xl font-sans text-lg font-light text-white/90 md:text-xl">
               A student-run 501(c)(3) nonprofit at UC San Diego, empowering our
               community through injury education, outreach, and evidence-based
@@ -89,10 +94,10 @@ export default function AeroHero2() {
                   href="/apply"
                   className="flex cursor-pointer items-center justify-center gap-0"
                 >
-                  <span className="rounded-full bg-white px-6 py-3 font-heading text-sm font-bold uppercase tracking-wider text-[#1B2A53] transition-colors duration-500 ease-in-out group-hover:bg-[#1B2A53] group-hover:text-white">
+                  <span className="rounded-full bg-white px-6 py-3 font-heading text-sm font-bold uppercase tracking-wider text-[#1B2A53] transition-colors duration-500 ease-in-out group-hover:bg-[...]
                     Apply now
                   </span>
-                  <div className="relative flex h-fit cursor-pointer items-center overflow-hidden rounded-full bg-white p-5 text-[#1B2A53] duration-500 ease-in-out transition-colors group-hover:bg-[#1B2A53] group-hover:text-white">
+                  <div className="relative flex h-fit cursor-pointer items-center overflow-hidden rounded-full bg-white p-5 text-[#1B2A53] duration-500 ease-in-out transition-colors group-hover:bg[...]
                     <ArrowUpRight className="absolute h-5 w-5 -translate-x-1/2 transition-all duration-500 ease-in-out group-hover:translate-x-10" />
                     <ArrowUpRight className="absolute h-5 w-5 -translate-x-10 transition-all duration-500 ease-in-out group-hover:-translate-x-1/2" />
                   </div>
