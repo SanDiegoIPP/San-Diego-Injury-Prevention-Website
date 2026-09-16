@@ -32,7 +32,7 @@ export default function Home() {
             </FadeUp>
             <FadeUp delay={0.2}>
               <p className="text-white text-lg leading-relaxed mb-8 font-medium">
-                We are a student-run 501(c)3 nonprofit organization centered at UC San Diego, dedicated to empowering our community through injury education, community outreach, and evidence-based[...]
+                We are a student-run 501(c)3 nonprofit organization centered at UC San Diego, dedicated to empowering our community through injury education, community outreach, and evidence-based programs.
               </p>
             </FadeUp>
             <FadeUp delay={0.3}>
@@ -82,7 +82,7 @@ export default function Home() {
             </FadeUp>
             <FadeUp delay={0.3}>
               <p className="text-white text-lg leading-relaxed font-medium">
-                SDIPP is committed to reducing preventable injuries and promoting safer environments for individuals and families across the San Diego area. Through our various programs and initia[...]
+                SDIPP is committed to reducing preventable injuries and promoting safer environments for individuals and families across the San Diego area. Through our various programs and initiatives, we aim to increase the use of evidence-based strategies for injury prevention in all areas, from adolescent sports to fall prevention classes at senior residential homes.
               </p>
             </FadeUp>
           </div>
