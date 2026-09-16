@@ -36,7 +36,7 @@ export default function TestimonialsSection() {
               Testimonials
             </h2>
             <p className="text-white/80 text-lg md:text-xl">
-              Testimonials from Fall Prevention Class attendees:
+              Reviews from our Fall Prevention Class attendees at Chateau Retirement Living Community:
             </p>
           </div>
         </FadeUp>
