@@ -94,10 +94,10 @@ export default function AeroHero2() {
                   href="/apply"
                   className="flex cursor-pointer items-center justify-center gap-0"
                 >
-                  <span className="rounded-full bg-white px-6 py-3 font-heading text-sm font-bold uppercase tracking-wider text-[#1B2A53] transition-colors duration-500 ease-in-out group-hover:bg-[...]
+                  <span className="rounded-full bg-white px-6 py-3 font-heading text-sm font-bold uppercase tracking-wider text-[#1B2A53] transition-colors duration-500 ease-in-out group-hover:bg-white">
                     Apply now
                   </span>
-                  <div className="relative flex h-fit cursor-pointer items-center overflow-hidden rounded-full bg-white p-5 text-[#1B2A53] duration-500 ease-in-out transition-colors group-hover:bg[...]
+                  <div className="relative flex h-fit cursor-pointer items-center overflow-hidden rounded-full bg-white p-5 text-[#1B2A53] duration-500 ease-in-out transition-colors group-hover:bg-white">
                     <ArrowUpRight className="absolute h-5 w-5 -translate-x-1/2 transition-all duration-500 ease-in-out group-hover:translate-x-10" />
                     <ArrowUpRight className="absolute h-5 w-5 -translate-x-10 transition-all duration-500 ease-in-out group-hover:-translate-x-1/2" />
                   </div>
