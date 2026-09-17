@@ -105,18 +105,22 @@ export default function Home() {
           <div className="max-w-lg relative z-20">
             <FadeUp delay={0.1}>
               <h2 className="font-heading uppercase text-[#1B2A53] text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-none tracking-wide">
-                HOW TO JOIN
+                HOW TO VOLUNTEER
               </h2>
             </FadeUp>
             <FadeUp delay={0.2}>
               <ul className="space-y-4 text-[#1B2A53] text-lg font-medium mb-8">
                 <li className="flex items-start gap-3">
                   <span className="mt-1.5 h-3 w-3 rounded-full bg-[#E2231A] flex-shrink-0" />
-                  <span>No application fee required.</span>
+                  <span>No membership fees ever.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1.5 h-3 w-3 rounded-full bg-[#E2231A] flex-shrink-0" />
                   <span>Members must be 18 years of age or older.</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="mt-1.5 h-3 w-3 rounded-full bg-[#E2231A] flex-shrink-0" />
+                  <span>No minimum or maximum volunteer shift requirement.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1.5 h-3 w-3 rounded-full bg-[#E2231A] flex-shrink-0" />
