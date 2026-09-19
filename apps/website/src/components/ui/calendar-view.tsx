@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Clock, MapPin, ExternalLink, X } from "lucide-react";
 import type { NotionEvent } from "@/lib/notion";
 
+//notion events can be found in https://app.notion.com/p/sdipp/302e6cf37b66807b97fdfd3560f6669a?v=302e6cf37b668014955e000cb3d80f52 or Programs/SDIPP Published events
+
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] as const;
