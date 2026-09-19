@@ -9,7 +9,6 @@ const GENERAL_BOARD_MEMBERS = [
   { filename: "Derek_Nguyen.webp", email: "den010@ucsd.edu", role: "Executive Health Coordinator" },
   { filename: "Enzo_Bautista.webp", email: "enbautista@ucsd.edu", role: "Logistics Chair" },
   { filename: "Henry_Hsieh.webp", email: "kunghenry02@gmail.com", role: "Service Chair" },
-  { filename: "Isha_Mittal.webp", email: "imittal@ucsd.edu", role: "Chapter Administration Officer" },
   { filename: "Laiken_Thoesen.webp", email: "lthoesen@ucsd.edu", role: "Outreach Chair" },
   { filename: "Minshen_Yang.webp", email: "miy035@ucsd.edu", role: "Trauma Programs Chair" },
   { filename: "Panav_Vashishat.webp", email: "pvashishat@ucsd.edu", role: "Research Chair" },
