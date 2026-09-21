@@ -81,7 +81,11 @@ const committees: Committee[] = [
       "Research, develop plans, and execute projects related to improving San Diego county (and other places) through policy and education.",
     ],
     focus: "Research, develop plans, and execute projects related to improving San Diego county through policy and education. Manage legal documentation and insurance for the organization.",
-    tasks: null,
+    tasks: [
+      "Filing and updating timely state and federal filings such as IRS 990-N, CA RRF-1,  CA CT-TR-1, and more",
+      "Writing the liability waivers for events, negotiate partnership deals, attaining insurance quotes",
+      "Ensure regulatory compliance",
+    ],
   },
 ];
 
