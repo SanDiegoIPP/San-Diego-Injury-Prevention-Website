@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Asterisk } from "lucide-react";
+import { Asterisk, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const NAV_COLUMNS = [
   {
@@ -27,6 +27,24 @@ const NAV_COLUMNS = [
       { label: "More", href: "/more" },
       { label: "Contact", href: "/contact" },
     ],
+  },
+];
+
+const SOCIAL_LINKS = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/sd__ipp/",
+    icon: Instagram,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/san-diego-injury-prevention-program/",
+    icon: Linkedin,
+  },
+  {
+    label: "YouTube",
+    href: "https://www.youtube.com/@SDInjuryPreventionProgram",
+    icon: Youtube,
   },
 ];
 
@@ -70,6 +88,26 @@ export default function SiteFooter() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Social Links - Bottom Margin */}
+        <div className="flex justify-center gap-6 mt-12 pt-8 border-t border-white/10">
+          {SOCIAL_LINKS.map((social) => {
+            const Icon = social.icon;
+            return (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+                className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white text-[#1B2A53] hover:bg-white/90 transition-all duration-200 hover:scale-110"
+                title={social.label}
+              >
+                <Icon className="w-5 h-5" />
+              </a>
+            );
+          })}
         </div>
       </div>
     </footer>
