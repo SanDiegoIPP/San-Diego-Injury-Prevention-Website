@@ -12,7 +12,6 @@ const GENERAL_BOARD_MEMBERS = [
   { filename: "Laiken_Thoesen.webp", email: "lthoesen@ucsd.edu", role: "Outreach Chair" },
   { filename: "Minshen_Yang.webp", email: "miy035@ucsd.edu", role: "Trauma Programs Chair" },
   { filename: "Panav_Vashishat.webp", email: "pvashishat@ucsd.edu", role: "Research Chair" },
-  { filename: "Ranya_Ato.webp", email: "r1ato@ucsd.edu", role: "Fundraising Chair" },
   { filename: "Rebecca_Zhang.webp", email: "rlz001@ucsd.edu", role: "Executive Media Chair" },
   { filename: "Ryan_Lao.webp", email: "laoryan100@gmail.com", role: "Volunteer Recruitment Chair" },
   { filename: "Saya_Butler.webp", email: "sayabutler@gmail.com", role: "Health Coordinator" },
