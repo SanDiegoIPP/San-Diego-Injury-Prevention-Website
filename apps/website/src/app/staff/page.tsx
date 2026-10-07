@@ -18,7 +18,7 @@ const GENERAL_BOARD_MEMBERS = [
   { filename: "Shannon_O_Rourke.webp", email: "slorourke@ucsd.edu", role: "Health Coordinator" },
   { filename: "Sophia_Qin.webp", email: "strollingsofa@gmail.com", role: "Chapter Administration Officer" },
   { filename: "Haley_Nguyen.webp", email: "hpn010@ucsd.edu", role: "Media Chair" },
-  { filename: "Pearl_Willis.webp", email: "pewillis@ucsd.edu", role: "Volunteer Recruitment Chair" },
+  { filename: "Pearl_Willis.webp", email: "pewillis@ucsd.edu", role: "Training and Development Coordinator" },
 ];
 
 function generalBoardFileNameToName(filename: string): string {
