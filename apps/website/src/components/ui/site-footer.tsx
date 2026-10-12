@@ -58,14 +58,14 @@ export default function SiteFooter() {
             <div className="flex items-center gap-3">
               <Asterisk className="w-8 h-8 text-white" aria-hidden />
               <span className="text-white font-heading font-bold text-2xl uppercase tracking-wide">
-                SDIPP
+                CalIPP
               </span>
             </div>
             <p className="text-white/80 text-sm leading-relaxed">
-              San Diego Injury Prevention Program is a student-run organization empowering the local community through education, outreach, and evidence-based injury prevention.
+             California Injury Prevention Program is a student-run 501(c)(3) nonprofit at UC San Diego, empowering our community through injury education, outreach, and evidence-based programs.            
             </p>
             <div className="mt-2 text-white/60 text-xs">
-              © {new Date().getFullYear()} SDIPP. All rights reserved.
+              © {new Date().getFullYear()} CalIPP. All rights reserved.
             </div>
           </div>
 
