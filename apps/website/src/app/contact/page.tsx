@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const CONTACT_EMAIL = "sdinjurypreventionprogram@gmail.com";
+const CONTACT_EMAIL2 = "staff@calipp.org";
 
 export default function ContactPage() {
   return (
@@ -32,8 +33,12 @@ export default function ContactPage() {
               className="max-w-md md:ml-auto w-full"
             >
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 text-left">
-                <p className="text-white/90 text-sm font-medium mb-2">Email us</p>
+                <p className="text-white/90 text-sm font-medium mb-2">Email for San Diego Inquiries</p>
                 <p className="text-white text-lg break-all">{CONTACT_EMAIL}</p>
+              </div>
+               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 text-left">
+                <p className="text-white/90 text-sm font-medium mb-2">Email for California Inquiries</p>
+                <p className="text-white text-lg break-all">{CONTACT_EMAIL2}</p>
               </div>
             </motion.div>
           </div>
