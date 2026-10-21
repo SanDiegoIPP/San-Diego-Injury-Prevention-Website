@@ -18,6 +18,7 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
               className="text-left"
             >
+            <div className="space-y-4"> </div>
               <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
                 Let&apos;s connect.
               </h1>
