@@ -25,10 +25,18 @@ export default function ContactPage() {
                 Reach out to us for any questions!
               </p>
               <p className="text-white/80 text-lg md:text-xl font-light">
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
                EIN: 41-3192228
               </p>
               <p className="text-white/80 text-lg md:text-xl font-light">
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
                 Mailing Address: 
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
               </p>
               <p className="text-white/80 text-lg md:text-xl font-light">
                 8950 Costa Verde Blvd
