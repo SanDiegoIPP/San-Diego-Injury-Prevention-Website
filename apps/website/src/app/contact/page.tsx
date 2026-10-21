@@ -26,20 +26,28 @@ export default function ContactPage() {
               </p>
               <p className="text-white/80 text-lg md:text-xl font-light">
               </p>
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 text-left">
-                <p className="text-white/90 text-sm font-medium mb-2">Charity ID</p>
-                <p className="text-white text-lg break-all">EIN: 41-3192228 </p>
-             <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 text-left">
-                <p className="text-white/90 text-sm font-medium mb-2">Mailing Address</p>
-                <p className="text-white text-lg break-all">
+              <p className="text-white/80 text-lg md:text-xl font-light">
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
+               EIN: 41-3192228
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
+                Mailing Address: 
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
                 8950 Costa Verde Blvd
               </p>
-              <p className="text-white text-lg break-all">
+              <p className="text-white/80 text-lg md:text-xl font-light">
                 San Diego, CA 92122
               </p>
-              <p className="text-white text-lg break-all">
-                United States{CONTACT_EMAIL} </p>
-              </motion.div>
+              <p className="text-white/80 text-lg md:text-xl font-light">
+                United States
+              </p>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
