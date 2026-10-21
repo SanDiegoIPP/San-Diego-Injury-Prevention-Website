@@ -18,22 +18,19 @@ export default function ContactPage() {
               transition={{ duration: 0.6 }}
               className="text-left"
             >
-            <div className="space-y-4"> </div>
+            <div className="space-y-4"> 
               <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
                 Let&apos;s connect.
               </h1>
               <p className="text-white/80 text-lg md:text-xl font-light">
                 Reach out to us for any questions!
               </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-              </p>
+            </div>
+            <div className="space-y-4"> 
               <p className="text-white/80 text-lg md:text-xl font-light">
                EIN: 41-3192228
               </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-              </p>
+            </div> 
               <p className="text-white/80 text-lg md:text-xl font-light">
                 Mailing Address: 
               </p>
@@ -48,6 +45,7 @@ export default function ContactPage() {
               <p className="text-white/80 text-lg md:text-xl font-light">
                 United States
               </p>
+            </div>
             </motion.div>
 
             <motion.div
