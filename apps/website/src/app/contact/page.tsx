@@ -24,6 +24,15 @@ export default function ContactPage() {
               <p className="text-white/80 text-lg md:text-xl font-light">
                 Reach out to us for any questions!
               </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
+               EIN: 41-3192228
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
+                Mailing Address: 
+                8950 Costa Verde Blvd
+                San Diego, CA 92122
+                United States
+              </p>
             </motion.div>
 
             <motion.div
