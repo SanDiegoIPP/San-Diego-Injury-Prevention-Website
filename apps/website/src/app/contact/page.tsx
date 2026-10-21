@@ -13,41 +13,42 @@ export default function ContactPage() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-left"
-            >
-              <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
-                Let&apos;s connect.
-              </h1>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-                Reach out to us for any questions!
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-               EIN: 41-3192228
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-                Mailing Address: 
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-                8950 Costa Verde Blvd
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-                San Diego, CA 92122
-              </p>
-              <p className="text-white/80 text-lg md:text-xl font-light">
-                United States
-              </p>
-            </motion.div>
+  initial={{ opacity: 0, x: -30 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6 }}
+  className="text-left"
+>
+  <div className="space-y-6">
+    <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
+      Let&apos;s connect.
+    </h1>
+
+    <p className="text-white/80 text-lg md:text-xl font-light">
+      Reach out to us for any questions!
+    </p>
+
+    <p className="text-white/80 text-lg md:text-xl font-light">
+      EIN: 41-3192228
+    </p>
+
+    <p className="text-white/80 text-lg md:text-xl font-light">
+      Mailing Address:
+    </p>
+
+    <p className="text-white/80 text-lg md:text-xl font-light">
+      8950 Costa Verde Blvd
+    </p>
+
+    <p className="text-white/80 text-lg md:text-xl font-light">
+      San Diego, CA 92122
+    </p>
+
+    <p className="text-white/80 text-lg md:text-xl font-light">
+      United States
+    </p>
+  </div>
+</motion.div>
+           
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
