@@ -29,8 +29,14 @@ export default function ContactPage() {
               </p>
               <p className="text-white/80 text-lg md:text-xl font-light">
                 Mailing Address: 
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
                 8950 Costa Verde Blvd
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
                 San Diego, CA 92122
+              </p>
+              <p className="text-white/80 text-lg md:text-xl font-light">
                 United States
               </p>
             </motion.div>
