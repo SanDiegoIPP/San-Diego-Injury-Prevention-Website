@@ -12,43 +12,39 @@ export default function ContactPage() {
       <section className="relative min-h-[600px] flex items-center pt-32 pb-32 px-4 md:px-6 overflow-hidden bg-[#1B2A53]">
         <div className="container mx-auto max-w-6xl relative z-10">
           <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-            <motion.div
+           <motion.div
   initial={{ opacity: 0, x: -30 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.6 }}
   className="text-left"
 >
-  <div className="space-y-6">
-    <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
-      Let&apos;s connect.
-    </h1>
+  <h1 className="font-sans text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 tracking-tight">
+    Let&apos;s connect.
+  </h1>
 
-    <p className="text-white/80 text-lg md:text-xl font-light">
-      Reach out to us for any questions!
-    </p>
+  <p className="text-white/80 text-lg md:text-xl font-light mb-6">
+    Reach out to us for any questions!
+  </p>
 
-    <p className="text-white/80 text-lg md:text-xl font-light">
-      EIN: 41-3192228
-    </p>
+  <p className="text-white/80 text-lg md:text-xl font-light mb-6">
+    EIN: 41-3192228
+  </p>
 
+  <div className="mt-6">
     <p className="text-white/80 text-lg md:text-xl font-light">
       Mailing Address:
     </p>
-
-    <p className="text-white/80 text-lg md:text-xl font-light">
+    <p className="text-white/80 text-lg md:text-xl font-light mt-2">
       8950 Costa Verde Blvd
     </p>
-
     <p className="text-white/80 text-lg md:text-xl font-light">
       San Diego, CA 92122
     </p>
-
     <p className="text-white/80 text-lg md:text-xl font-light">
       United States
     </p>
   </div>
-</motion.div>
-           
+</motion.div>           
 
             <motion.div
               initial={{ opacity: 0, x: 30 }}
