@@ -17,7 +17,7 @@ const GENERAL_BOARD_MEMBERS = [
   { filename: "Saya_Butler.webp", email: "sayabutler@gmail.com", role: "Health Coordinator" },
   { filename: "Shannon_O_Rourke.webp", email: "slorourke@ucsd.edu", role: "Health Coordinator" },
   { filename: "Sophia_Qin.webp", email: "strollingsofa@gmail.com", role: "Chapter Administration Officer" },
-  { filename: "Haley_Nguyen.webp", email: "hpn010@ucsd.edu", role: "Media Chair" },
+  { filename: "Haley_Nguyen.webp", email: "hpn010@ucsd.edu", role: "Executive Marketing Chair" },
   { filename: "Pearl_Willis.webp", email: "pewillis@ucsd.edu", role: "Training and Development Coordinator" },
 ];
 
