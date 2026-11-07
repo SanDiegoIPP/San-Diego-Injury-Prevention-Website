@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { FadeUp } from "@/components/ui/fade-up";
 
 const organizations = [
@@ -72,21 +74,15 @@ export default function PublicHealthFairSection() {
         </div>
 
         <FadeUp delay={0.15}>
-          {/* Replace this placeholder with the fair flyer or event photo when available. */}
-          <div
-            role="img"
-            aria-label="Placeholder for a Public Health Fair image; upload an event flyer or photo here"
-            className="flex aspect-[4/3] min-h-64 flex-col items-center justify-center rounded-2xl border-2 border-dashed border-[#9AA7BD] bg-white p-8 text-center shadow-sm"
-          >
-            <span className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FCE9E8] text-3xl text-[#E2231A]" aria-hidden="true">
-              ＋
-            </span>
-            <p className="font-heading text-lg font-bold text-[#1B2A53]">
-              Add the event image here
-            </p>
-            <p className="mt-2 max-w-xs text-sm leading-relaxed text-[#536079]">
-              Upload the fair flyer or a community photo to replace this placeholder.
-            </p>
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-xl overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src="/images/final flyer.webp"
+              alt="Flyer for the San Diego Public Health Fair"
+              fill
+              className="object-contain"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              priority
+            />
           </div>
         </FadeUp>
       </div>
