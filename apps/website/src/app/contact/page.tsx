@@ -35,7 +35,7 @@ export default function ContactPage() {
       Mailing Address:
     </p>
     <p className="text-white/80 text-lg md:text-xl font-light mt-2">
-      8950 Costa Verde Blvd
+      8950 Costa Verde Blvd, Apt 4545
     </p>
     <p className="text-white/80 text-lg md:text-xl font-light">
       San Diego, CA 92122
