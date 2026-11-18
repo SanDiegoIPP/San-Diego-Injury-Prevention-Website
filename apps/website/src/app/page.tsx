@@ -3,7 +3,6 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 
 import { FadeUp } from "@/components/ui/fade-up";
-import PublicHealthFairSection from "@/components/ui/public-health-fair-section";
 
 const CurveOverlay = dynamic(() => import("@/components/ui/curve-overlay"));
 import AeroHero2 from "@/components/ui/aero-hero-2";
@@ -16,9 +15,6 @@ export default function Home() {
     <div className="bg-white">
       {/* ─── HERO ──────────────────────────────────────────────────────── */}
       <AeroHero2 />
-
-      {/* ─── UPCOMING PUBLIC HEALTH FAIR ───────────────────────────────── */}
-      <PublicHealthFairSection />
 
       {/* ─── INTRO SPLIT ───────────────────────── */}
       <section className="relative flex min-h-[600px] flex-col overflow-hidden bg-white md:flex-row">
@@ -86,7 +82,7 @@ export default function Home() {
             </FadeUp>
             <FadeUp delay={0.3}>
               <p className="text-lg font-medium leading-relaxed text-white">
-                SDIPP is committed to reducing preventable injuries and promoting safer environments for individuals and families across the San Diego area. Through our various programs and initiatives, we aim to increase the use of evidence-based strategies for injury prevention in all areas, from adolescent sports to fall prevention classes at senior residential homes.
+                SDIPP is committed to reducing preventable injuries and promoting safer environments for individuals and families across the San Diego area. Through our various programs and initiatives, we equip community members with practical knowledge and skills to prevent injuries before they happen.
               </p>
             </FadeUp>
           </div>
@@ -123,7 +119,7 @@ export default function Home() {
             <FadeUp delay={0.3}>
               <Link
                 href="/apply"
-                className="inline-flex items-center justify-center rounded-full border-2 border-[#E2231A] bg-[#E2231A] px-8 py-3 font-heading font-bold uppercase tracking-wider text-white transition-colors hover:bg-white hover:text-[#E2231A]"
+                className="inline-flex items-center justify-center rounded-full border-2 border-[#E2231A] bg-[#E2231A] px-8 py-3 font-heading font-bold uppercase tracking-wider text-white transition-colors hover:bg-[#B81C14]"
               >
                 apply today
               </Link>
