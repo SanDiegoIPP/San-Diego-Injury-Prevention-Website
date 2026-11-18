@@ -3,6 +3,7 @@ import Link from "next/link";
 import dynamic from "next/dynamic";
 
 import { FadeUp } from "@/components/ui/fade-up";
+import PublicHealthFairSection from "@/components/ui/public-health-fair-section";
 
 const CurveOverlay = dynamic(() => import("@/components/ui/curve-overlay"));
 import AeroHero2 from "@/components/ui/aero-hero-2";
@@ -15,6 +16,9 @@ export default function Home() {
     <div className="bg-white">
       {/* ─── HERO ──────────────────────────────────────────────────────── */}
       <AeroHero2 />
+
+      {/* ─── WELLNESS COACHING ────────────────────────────────────────── */}
+      <PublicHealthFairSection />
 
       {/* ─── INTRO SPLIT ───────────────────────── */}
       <section className="relative flex min-h-[600px] flex-col overflow-hidden bg-white md:flex-row">
